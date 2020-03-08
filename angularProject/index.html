@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+ 
+<title>Angular Testing</title>
+
+<script src="js/angular.js"></script>
+<script src="js/custom.js"></script>
+</head>
+<body >
+	N1:<input type="text" ng-model="n1">
+     N2:<input type="text" ng-model="n2">
+
+
+<select ng-model="color" >
+	<option >Red</option>
+	<option>green</option>}
+	<option >yellow</option>
+</select>
+<input type="text" style="background-color:{{color}}">
+	
+	<p id="p1" ng-init="num=10;name='abhi';col1=['a','b','c']">
+		
+	</p>
+<div>
+	number is:{{num}}<br>
+	name is :{{name}}<br>
+	<li ng-repeat="x in col1">{{x}}</li>
+</div>
+
+<div ng-controller="myController">
+
+
+</div>
+</body>
+</html>
